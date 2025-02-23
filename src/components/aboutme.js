@@ -38,30 +38,29 @@ const About = () => {
       </div>
       
       {/* Profile Image and Description Section */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-1">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
         {/* Profile Image with Creative Design */}
         <div className="relative w-full md:w-1/3 lg:w-1/4 flex justify-center">
-          {/* Profile Image */}
           <img
             src={profilePic}
             alt="Profile"
-            className={`relative w-5/6 h-auto object-cover rounded-lg border-4 border-transparent z-10 shadow-xl hover:scale-105 transition duration-300 ease-in-out md:w-full ${isVisible ? 'animate-fadeIn' : ''}`} // Keep md:w-full for desktop view
+            className={`relative w-5/6 h-auto object-cover rounded-lg border-4 border-transparent z-10 shadow-xl hover:scale-105 transition duration-300 ease-in-out md:w-full ${isVisible ? 'animate-fadeIn' : ''}`}
           />
         </div>
 
         {/* About Me Description */}
-        <div className="w-full md:w-2/3 lg:w-3/4 flex flex-col justify-between">
-          <p className={`text-lg md:text-2xl text-gray-100 leading-relaxed mb-4 text-justify px-6 md:px-12 ${isVisible ? 'animate-fadeIn' : ''}`}>
+        <div className="w-full md:w-2/3 lg:w-3/4 flex flex-col">
+          <p className={`text-lg md:text-2xl text-gray-100 leading-relaxed mb-6 px-6 md:px-12 text-justify ${isVisible ? 'animate-fadeIn' : ''}`}>
             I am a skilled web developer with hands-on experience in full-stack development using the MERN stack (MongoDB, Express.js, React, Node.js) and Next.js. I excel in both front-end and back-end development, creating modern, responsive designs and building scalable web applications. I'm always eager to embrace new technologies and tackle challenging projects that require a blend of technical skill and creativity.
           </p>
 
-          {/* Button and Social Links on the Same Line */}
-          <div className="flex items-center justify-start space-x-8 mt-4">
+          {/* Buttons & Social Links Section (Improved Layout) */}
+          <div className="flex flex-col md:flex-row items-center justify-start px-6 md:px-12 space-y-4 md:space-y-0 md:space-x-8">
             {/* Download CV Button */}
             <a
               href="/Ayesha Iqbal Resume.pdf" // Path relative to public directory
               download="Ayesha_Iqbal_Resume.pdf"
-              className="inline-flex items-center bg-[#4A148C] text-white py-3 px-8 rounded-full shadow-lg hover:bg-[#6A1B9A] transition duration-300 ease-in-out text-lg"
+              className="inline-flex items-center bg-[#4A148C] text-white py-3 px-8 rounded-full shadow-lg hover:bg-[#6A1B9A] transition duration-300 ease-in-out text-lg w-full md:w-auto text-center justify-center"
             >
               Download CV
               <MdArrowDownward size={24} className="ml-2" />
@@ -84,15 +83,15 @@ const About = () => {
         @keyframes fadeIn {
           from {
             opacity: 0;
-            transform: translateY(-20px); /* Move upwards initially */
+            transform: translateY(-20px);
           }
           to {
             opacity: 1;
-            transform: translateY(0); /* Move to the original position */
+            transform: translateY(0);
           }
         }
         .animate-fadeIn {
-          animation: fadeIn 1s ease forwards; /* Slowed down the duration to 1 second */
+          animation: fadeIn 1s ease forwards;
         }
       `}</style>
     </div>
