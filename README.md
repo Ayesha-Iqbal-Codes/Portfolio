@@ -6,3 +6,4 @@ This is my personal portfolio website built with React.js.
 - About Me
 - Projects
 - Contact Information
+- Responsive Design
