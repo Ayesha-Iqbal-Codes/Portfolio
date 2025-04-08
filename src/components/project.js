@@ -27,8 +27,8 @@ const Projects = () => {
               <p className="text-gray-300 text-sm leading-relaxed">
                 A website where I add reviews of all movies and TV shows I've watched, featuring special lists. Built with Tailwind CSS, React, and backend APIs for forms.
               </p>
-              <a href="https://www.linkedin.com/posts/ayesha-iqbal-87133a309" 
-                 className="text-purple-700 hover:underline" target="_blank" rel="noopener noreferrer">More Details &gt;&gt;</a>
+              <a href="https://watchlist-diaries.vercel.app/" 
+                 className="text-purple-700 hover:underline" target="_blank" rel="noopener noreferrer">Link &gt;&gt;</a>
             </div>
           </div>
 
@@ -47,7 +47,7 @@ const Projects = () => {
               <p className="text-gray-300 text-sm leading-relaxed">
                 A cold storage management dashboard with item management, PDF generation, and real-time tracking across multiple racks. Color-coded statuses (green/yellow/red) indicate storage levels.
               </p>
-              <a href="https://www.linkedin.com/posts/ayesha-iqbal-87133a309" 
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7300540137363406848/" 
                  className="text-purple-700 hover:underline" target="_blank" rel="noopener noreferrer">More Details &gt;&gt;</a>
             </div>
           </div>
